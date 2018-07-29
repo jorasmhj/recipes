@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  currentPage = 'recipe';
+  onNavigate(page : string){
+    this.currentPage = page;
+  }
 }
